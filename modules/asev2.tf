@@ -21,7 +21,7 @@ resource "azurerm_subnet" "example" {
 }
 
 resource "azurerm_app_service_environment_v3" "example" {
-  name                = "example-asev3"
+  name                = "rn-poc-asev3-01"
   resource_group_name = azurerm_resource_group.example.name
   subnet_id           = azurerm_subnet.example.id
 
